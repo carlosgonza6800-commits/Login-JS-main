@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Clase 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registrar Usuario</h1>
+    </header>
+
+    <main>
+        <form onsubmit="capturarDatos(event)">
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required placeholder="Ingrese su correo">
+            <br><br>
+
+            <label for="userEdad">Edad:</label>
+            <input type="number" id="userEdad" name="userEdad" required placeholder="Ingrese su edad" min="1">
+            <br><br>
+
+            <label for="userPassword">Contraseña:</label>
+            <input type="password" id="userPassword" name="userPassword" required placeholder="Ingrese su contraseña">
+            <br><br>
+
+            <label for="userPassword2">Confirmar contraseña:</label>
+            <input type="password" id="userPassword2" name="userPassword2" required placeholder="Confirme su contraseña">
+            <br><br>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
